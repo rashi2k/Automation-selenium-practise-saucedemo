@@ -4,12 +4,8 @@ import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 public class DataUtils {
 
-	private static Logger Log = LogManager.getLogger(DataUtils.class.getName());
 	
 	static String filePath = System.getProperty("user.dir") + "\\resources\\" + "TestData.xlsx";
 	
@@ -29,7 +25,7 @@ public class DataUtils {
 		}
 		catch (Exception e) {
 			e.getMessage();
-			Log.error("unable to read data from file");
+			System.out.println("unable to read data from file");
 		}
 		return value;
 	}
