@@ -1,0 +1,6 @@
+/resources/
+.settings
+allure-results/
+bin/
+target/
+test-output
